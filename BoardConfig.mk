@@ -77,7 +77,6 @@ TARGET_USES_GRALLOC1 := true
 TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
-
 TARGET_USES_AOSP_SURFACEFLINGER := true
 
 # DTBO image
@@ -226,6 +225,9 @@ include device/xiaomi/fog/sepolicy/vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# SMOOTH MOTION
+TARGET_DISPLAY_USE_SMOOTH_MOTION := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
