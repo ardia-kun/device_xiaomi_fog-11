@@ -29,6 +29,12 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=ext4 \
     POSTINSTALL_OPTIONAL_vendor=true
 
+# Speed up apps
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI \
+    Launcher3QuickStep 
+
 PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
