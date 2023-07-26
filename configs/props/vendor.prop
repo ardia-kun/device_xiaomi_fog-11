@@ -210,6 +210,10 @@ ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 
+# Hwui
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Media
 vendor.mm.enable.qcom_parser=16777215
 
