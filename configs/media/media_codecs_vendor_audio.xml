@@ -15,10 +15,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Included>
-    <Decoders>
-        <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
-        <!-- SimpleOMXComponet based software decoder-->
-        <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="1"/>
-    </Decoders>
-</Included>
+
+<resources>
+    <!-- Show battery information -->
+    <bool name="config_show_battery_info" translatable="false">false</bool>
+    <string-array name="configs_base">
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+
+    </string-array>
+</resources>
