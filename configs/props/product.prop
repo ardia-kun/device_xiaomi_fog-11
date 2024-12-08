@@ -42,6 +42,15 @@ ro.lmk.psi_partial_stall_ms=50
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
->>>>>>> 5cfc926 (fog: Update lmkd properties to improve responsiveness)
 # Radio
 persist.vendor.qti.telephony.vt_cam_interface=2
+
+# Battery Saving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
