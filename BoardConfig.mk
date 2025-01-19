@@ -86,9 +86,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_HAVE_QCOM_FM := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
@@ -220,7 +217,7 @@ USE_SENSOR_MULTI_HAL := true
 BOARD_VNDK_VERSION := current
 
 # Sepolicy
-include device/xiaomi/fog/sepolicy/vndr/SEPolicy.mk
+include device/xiaomi/qcom/sepolicy/vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
